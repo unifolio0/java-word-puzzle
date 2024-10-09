@@ -1,7 +1,5 @@
 # 미션 - 단어 퍼즐 게임
 
-<img width="510" alt="스크린샷 2024-07-15 오후 3 22 30" src="https://github.com/user-attachments/assets/eabc1e4e-12d8-46cc-ad12-27492161cfe0">
-
 ## 🚀 진행 방식
 1. 미션 진행은 [미션 진행 가이드 문서](https://github.com/develup-mission/docs/blob/main/mission-guide.md)를 따른다.
 
