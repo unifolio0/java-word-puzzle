@@ -15,4 +15,8 @@ public class Word {
     public String shuffle() {
         return WordShuffler.shuffle(word);
     }
+
+    public String getWord() {
+        return word;
+    }
 }

@@ -17,19 +17,20 @@ public class WordPuzzleGame {
     private Word setting() {
         Random random = new Random();
         Word word = VOCABULARIES.get(random.nextInt(VOCABULARIES.size()));
+        System.out.println(word.getWord());
         OutputView.printGameStart(word.shuffle());
         return word;
     }
 
     private void play(Word word) {
-        int step = 0;
-        while (step < 3) {
+        Step step = Step.startStep();
+        while (step.isPlay()) {
             String s = InputView.inputClient();
             if (word.isCorrect(s)) {
                 OutputView.printGameWin();
                 break;
             }
-            step++;
+            step = step.nextStep();
             OutputView.printNotCorrect();
         }
     }
